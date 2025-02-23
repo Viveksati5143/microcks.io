@@ -15,5 +15,7 @@ jobs:
           node-version: latest
       - name: install dependencies
         run: npm ci
+      - name: install ESLint
+        run: npm install eslint --save-dev
       - name: run linter
         run: npm run lint
